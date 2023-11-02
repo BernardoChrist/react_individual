@@ -1,0 +1,50 @@
+.body {
+  background-color: #f9c8a9; /* Cor de fundo do header */
+  color: #004aad; /* Cor do texto */
+  padding: 10px 0; /* Espaçamento interno */
+  /* display: flex; Exibe os elementos em uma linha flexível */
+  justify-content: space-between; /* Alinha os elementos à esquerda e à direita */
+  align-items: center; /* Alinha os elementos verticalmente */
+  font-size: 25px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  height: auto;
+  border-top: 2px solid #004aad;
+}
+
+.produtos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.produtos p {
+  font-size: 25px;
+  margin: 0 150px;
+}
+
+img {
+  max-width: 125px; /* Largura máxima da imagem do logo */
+  height: auto; /* Altura automática de acordo com a largura */
+  border: 2px solid #004aad;
+}
+
+.hr {
+  height: 3px;
+  background-color: #004aad;
+  margin: 50px 0 5px 0;
+}
+
+.body2 {
+  background-color: #f9c8a9; /* Cor de fundo do header */
+  color: #004aad; /* Cor do texto */
+  padding: 10px 0; /* Espaçamento interno */
+  /* display: flex; Exibe os elementos em uma linha flexível */
+  justify-content: space-between; /* Alinha os elementos à esquerda e à direita */
+  align-items: center; /* Alinha os elementos verticalmente */
+  font-size: 25px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  height: auto;
+  border-bottom: 2px solid #004aad;
+}

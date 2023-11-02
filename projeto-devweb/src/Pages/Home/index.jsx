@@ -10,7 +10,7 @@ const Home = () => {
         <Header />
       </header>
       <section className="home">
-        <h1>Bem vindo ao site da tribo</h1>
+        <h1>Bem vindo ao site da Tribo</h1>
         <hr />
         <p>
           Pela barra de navegação você consegue visitar outras areas do nosso
