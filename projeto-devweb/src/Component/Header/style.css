@@ -6,6 +6,8 @@ header {
   display: flex; /* Exibe os elementos em uma linha flexível */
   justify-content: space-between; /* Alinha os elementos à esquerda e à direita */
   align-items: center; /* Alinha os elementos verticalmente */
+  font-size: xx-large;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 /* Estilização dos links de navegação */
@@ -31,6 +33,6 @@ nav a {
 
 /* Estilo do logo (imagem) */
 .logo img {
-  max-width: 100px; /* Largura máxima da imagem do logo */
+  max-width: 125px; /* Largura máxima da imagem do logo */
   height: auto; /* Altura automática de acordo com a largura */
 }

@@ -1,6 +1,7 @@
 import React from "react";
+import "./style.css";
 import Header from "../../Component/Header";
-import "../../Component/Header/style.css";
+import Footer from "../../Component/Footer";
 
 const Home = () => {
   return (
@@ -8,7 +9,16 @@ const Home = () => {
       <header>
         <Header />
       </header>
-      <h1>Home</h1>
+      <section className="home">
+        <h1>Bem vindo ao site da tribo</h1>
+        <hr />
+        <p>
+          Pela barra de navegação você consegue visitar outras areas do nosso
+          site, recomendamos que visite a página de produtos
+        </p>
+        <hr />
+      </section>
+      <Footer />
     </div>
   );
 };

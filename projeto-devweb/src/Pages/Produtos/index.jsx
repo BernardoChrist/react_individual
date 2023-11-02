@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../../Component/Header";
-import "../../Component/Header/style.css";
+import Footer from "../../Component/Footer";
 
 const Produtos = () => {
   return (
@@ -8,7 +8,16 @@ const Produtos = () => {
       <header>
         <Header />
       </header>
-      <h1>Produtos</h1>
+      <section className="home">
+        <h1>Lista de Produtos:</h1>
+        <hr />
+        <p>
+          Pela barra de navegação você consegue visitar outras areas do nosso
+          site, recomendamos que visite a página de produtos
+        </p>
+        <hr />
+      </section>
+      <Footer />
     </div>
   );
 };

@@ -1,11 +1,14 @@
-footer {
-  background-color: #ff914d; /* Cor de fundo do header */
+.contato {
+  background-color: #f9c8a9; /* Cor de fundo do header */
   color: #004aad; /* Cor do texto */
   padding: 10px 0; /* Espaçamento interno */
   /* display: flex; Exibe os elementos em uma linha flexível */
   justify-content: space-between; /* Alinha os elementos à esquerda e à direita */
   align-items: center; /* Alinha os elementos verticalmente */
-  text-align: center;
+  font-size: xx-large;
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: large;
+  text-align: center;
+  height: 400px;
+  border-top: 2px solid #004aad;
+  border-bottom: 2px solid #004aad;
 }
