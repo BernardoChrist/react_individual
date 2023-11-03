@@ -35,7 +35,21 @@ img {
   margin: 50px 0 5px 0;
 }
 
-.body2 {
+.adicionarProduto {
+  background-color: #f9c8a9; /* Cor de fundo do header */
+  color: #004aad; /* Cor do texto */
+  padding: 10px 0; /* Espaçamento interno */
+  /* display: flex; Exibe os elementos em uma linha flexível */
+  justify-content: space-between; /* Alinha os elementos à esquerda e à direita */
+  align-items: center; /* Alinha os elementos verticalmente */
+  font-size: 25px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  height: auto;
+  border-bottom: 2px solid #004aad;
+}
+
+.excluirProduto {
   background-color: #f9c8a9; /* Cor de fundo do header */
   color: #004aad; /* Cor do texto */
   padding: 10px 0; /* Espaçamento interno */

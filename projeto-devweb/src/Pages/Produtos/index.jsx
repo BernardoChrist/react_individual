@@ -7,6 +7,7 @@ import bola from "../../Image/bola.png";
 import luva from "../../Image/luva.png";
 import mochila from "../../Image/mochila.png";
 import "./style.css";
+import DeleteProduct from "../../Component/ExcluirProduto";
 
 const Produtos = () => {
   //contantes do nome do produto
@@ -78,7 +79,7 @@ const Produtos = () => {
         </div>
         <hr className="hr" />
       </section>
-      <section className="body2">
+      <section className="adicionarProduto">
         <h1>Carrinho de Compras:</h1>
         <div>
           <input
@@ -89,6 +90,16 @@ const Produtos = () => {
           />
           <button onClick={adicionar}>Adicionar ao carrinho</button>
         </div>
+      </section>
+      <section className="excluirProduto">
+        <h2>Produtos do Carrinho:</h2>
+        {produtos.map((item) => (
+          <DeleteProduct
+            key={item.id}
+            item={item}
+            excluirProduto={excluirProduto}
+          />
+        ))}
       </section>
       <Footer />
     </div>
