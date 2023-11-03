@@ -18,9 +18,25 @@ const Produtos = () => {
   //constantes de useStates para cadastrar e excluir produto do carrinho
   const [novoProduto, setNovoProduto] = useState("");
   const [produtos, setProdutos] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [busca, setBusca] = useState("");
 
   //constante da url da api externa, para utilizarmos o array de produtos
   const url = "https://6543ac0501b5e279de20c60f.mockapi.io/produtos";
+
+  //função para o aray de produtos exibir na tela
+  const getProdutos = async () => {
+    setLoading(true);
+    try {
+      const { data } = await axios.get(url);
+      console.log(data);
+      setProdutos(data);
+    } catch (err) {
+      console.log(err);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   //função de adicionar um produto ao carrinho
   const adicionar = async () => {
@@ -56,6 +72,9 @@ const Produtos = () => {
     }
   }
 
+  useEffect(() => {
+    getProdutos();
+  }, []);
   return (
     <div>
       <header>
